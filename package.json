@@ -1,0 +1,18 @@
+{
+  "name": "todolist-v2",
+  "version": "1.0.0",
+  "description": "A simple todo list app using node js and mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mazharul Islam",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.0"
+  }
+}
