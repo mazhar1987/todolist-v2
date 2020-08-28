@@ -70,7 +70,7 @@ app.get("/", function(req, res) {
             
         } else {
             // Add new item
-            res.render("list", {currentDate: day, listTitle: "Today", newListItems: foundItems});
+            res.render("list", {listTitle: "Today", newListItems: foundItems, currentDate: day});
         }
     });
 });
@@ -93,7 +93,7 @@ app.get("/:customListName", function (req, res) {
                 res.redirect("/");
             } else {
                 // Show existing list
-                res.render("list", {currentDate: day, listTitle: foundList.name, newListItems: foundList.items});
+                res.render("list", {listTitle: foundList.name, newListItems: foundList.items, currentDate: day});
             }
         }
     });
